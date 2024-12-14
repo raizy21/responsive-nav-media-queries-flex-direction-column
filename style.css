@@ -1,0 +1,90 @@
+/* Reset Line */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+}
+
+nav {
+  font-size: 1.5em;
+  display: flex;
+  justify-content: space-between;
+}
+h1 {
+  font-size: 6rem;
+  text-align: center;
+  color: yellow;
+}
+ul,
+li {
+  display: inline;
+  margin: 0;
+  padding: 0;
+}
+
+ul {
+  /* border: 1px solid red; */
+  flex: 1;
+  max-width: 50%;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  /* CSS rules for extra small screens */
+  h1 {
+    color: red;
+    font-size: 2rem;
+  }
+  .navigation,
+  .navigation-ul {
+    flex-direction: column;
+    align-items: center;
+    border: 1px solid red;
+  }
+}
+
+/* Small devices (portrait tablets and large phones, 600px to 768px) */
+@media only screen and (min-width: 601px) and (max-width: 768px) {
+  /* CSS rules for small screens */
+  h1 {
+    color: green;
+    font-size: 2.5rem;
+  }
+
+  .navigation {
+    flex-direction: column;
+    align-items: center;
+    border: 1px solid green;
+  }
+  .navigation-ul {
+    flex-direction: column;
+    align-items: center;
+  }
+  .navigation-ul a {
+    color: green;
+  }
+}
+
+/* Medium devices (landscape tablets, 768px to 992px) */
+@media only screen and (min-width: 769px) and (max-width: 992px) {
+  /* CSS rules for medium screens */
+  h1 {
+    color: blue;
+    font-size: 3rem;
+  }
+}
+
+/* Large devices (laptops/desktops, 992px ) */
+@media only screen and (min-width: 993px) {
+  /* CSS rules for large screens */
+  h1 {
+    color: peru;
+    font-size: 4rem;
+  }
+}
